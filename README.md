@@ -63,23 +63,37 @@ Study-Notion is a comprehensive EdTech platform designed to facilitate online le
 
    ```
 
-3. Create a `.env.local` file in the root directory and add the following environment variables:
+3. Create a .env file in the server directory and add the following environment variables:
 
    ```env
-   MONGODB_URI = your_mongodb_connection_string
-   NEXT_PUBLIC_RAZORPAY_KEY = your_razorpay_key_id
-   RAZORPAY_KEY = your_razorpay_key_secret
-   JWT_SECRET = your_jwt_secret
-   RAZORPAY_SECRET = your_razorpay_secret
+   MAIL_HOST=smtp.yourmailprovider.com
+   MAIL_USER=your_email@example.com
+   MAIL_PASS=your_mail_password
+   JWT_SECRET=your_jwt_secret
+   FOLDER_NAME=your_folder_name
+   RAZORPAY_KEY=your_razorpay_key
+    RAZORPAY_SECRET=your_razorpay_secret
+    API_KEY=your_api_key
+    API_SECRET=your_api_secret
+    CLOUD_NAME=your_cloud_name
+    MONGODB_URL=your_mongodb_connection_string
+    PORT=4000
    ```
 
-4. Run the development server:
+4. Create a .env file in the server directory and add the following environment variables:
 
-   ```sh
-   npm run dev
+   ```env
+   REACT_APP_BASE_URL=http://localhost:4000/api/v1
+
    ```
 
-   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Run the development server:
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Usage
 
@@ -109,4 +123,3 @@ This project is licensed under the MIT License.
 
 - GitHub: [thefarhanahmad](https://github.com/thefarhanahmad)
 - Email: akhtarfarhan281@gmail.com
-
